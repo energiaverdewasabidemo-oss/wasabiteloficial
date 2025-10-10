@@ -80,9 +80,9 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
     <footer id="contacto" className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden particles-bg">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
+        <div className="absolute inset-0 animate-pulse" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} className="animate-pulse"></div>
+        }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -91,9 +91,9 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 slide-up">
             <div className="bounce-in">
               <div className="flex items-center space-x-3 mb-6">
-                <img 
-                  src="/Etna_Sans_Serif__1_-removebg-preview.png" 
-                  alt="WasabiTel Logo" 
+                <img
+                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-21.png"
+                  alt="WasabiTel Logo"
                   className="w-36 h-36 object-contain float-animation hover:scale-110 transition-transform duration-500"
                 />
               </div>
