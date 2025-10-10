@@ -49,11 +49,12 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
               <div className="absolute -inset-3 bg-gradient-to-r from-teal-400/20 via-orange-400/20 to-teal-400/20 rounded-xl blur-2xl opacity-70 animate-spin" style={{animationDuration: '6s'}}></div>
 
               {/* Premium rectangular container with perfect fit */}
-              <div className="relative bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-xl px-2 py-1 sm:px-3 sm:py-1.5 border-2 border-teal-400/40 transition-all duration-300 shadow-2xl group-hover:border-teal-400/60 group-hover:shadow-teal-500/20 group-hover:scale-105 flex items-center justify-center">
+              <div className="relative bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-lg p-0 border-2 border-teal-400/40 transition-all duration-300 shadow-2xl group-hover:border-teal-400/60 group-hover:shadow-teal-500/20 group-hover:scale-105 overflow-hidden inline-flex">
                 <img
                   src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-26.png"
                   alt="WasabiTel Logo"
                   className="h-10 sm:h-16 w-auto object-contain transition-all duration-300 brightness-110 contrast-110 relative z-10 block"
+                  style={{ display: 'block', margin: 0, padding: 0 }}
                 />
               </div>
             </div>
