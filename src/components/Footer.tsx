@@ -96,11 +96,11 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
                   <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 rounded-xl blur-lg opacity-80 transition-all duration-300"></div>
 
                   {/* Elegant rectangular container for footer */}
-                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl px-6 py-4 border border-teal-400/30 transition-all duration-300 shadow-xl group-hover:border-teal-400/50">
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-teal-400/30 transition-all duration-300 shadow-xl group-hover:border-teal-400/50">
                     <img
                       src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-26.png"
                       alt="WasabiTel Logo"
-                      className="h-20 w-auto object-contain transition-all duration-500 brightness-110 group-hover:scale-105"
+                      className="h-16 w-auto object-contain transition-all duration-500 brightness-110 group-hover:scale-105"
                     />
                   </div>
                 </div>
