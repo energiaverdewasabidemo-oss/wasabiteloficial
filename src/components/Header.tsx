@@ -41,22 +41,16 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
         <div className="flex justify-between items-center py-2 sm:py-4">
           {/* Logo Section - Exactly like WasabiEnergía */}
           <div className="flex items-center">
-            <div className="relative group cursor-pointer scale-105 transition-all duration-300">
-              {/* Simple glow effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 rounded-xl blur-lg opacity-100 transition-all duration-300 animate-pulse"></div>
-              
-              {/* Animated rotating glow */}
-              <div className="absolute -inset-3 bg-gradient-to-r from-teal-400/10 via-orange-400/10 to-teal-400/10 rounded-xl blur-xl opacity-80 animate-spin" style={{animationDuration: '8s'}}></div>
-              
-              {/* Floating particles effect */}
-              <div className="absolute -inset-1 bg-gradient-to-br from-teal-300/5 to-orange-300/5 rounded-xl blur-md opacity-60" style={{animation: 'float 4s ease-in-out infinite'}}></div>
-              
-              {/* Logo container */}
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl px-3 py-1 sm:px-6 sm:py-2 border border-teal-400/50 transition-all duration-300 shadow-lg">
+            <div className="relative group cursor-pointer transition-all duration-300">
+              {/* Subtle glow effect */}
+              <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/10 to-orange-500/10 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+              {/* Logo container - cleaner design */}
+              <div className="relative flex items-center">
                 <img
-                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-21.png"
+                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-22.png"
                   alt="WasabiTel Logo"
-                  className="w-16 h-16 sm:w-24 sm:h-24 object-contain transition-all duration-300 brightness-110 relative z-10"
+                  className="h-12 sm:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 relative z-10"
                 />
               </div>
             </div>

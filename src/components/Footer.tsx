@@ -92,9 +92,9 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
             <div className="bounce-in">
               <div className="flex items-center space-x-3 mb-6">
                 <img
-                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-21.png"
+                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-22.png"
                   alt="WasabiTel Logo"
-                  className="w-36 h-36 object-contain float-animation hover:scale-110 transition-transform duration-500"
+                  className="h-24 w-auto object-contain float-animation hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <p className="text-gray-300 text-xl leading-relaxed mb-8 hover:text-gray-200 transition-colors duration-300">
