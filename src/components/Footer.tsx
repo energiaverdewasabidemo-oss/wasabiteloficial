@@ -91,16 +91,19 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 slide-up">
             <div className="bounce-in">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="relative group">
-                  {/* Elegant glow for footer */}
-                  <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 rounded-xl blur-lg opacity-80 transition-all duration-300"></div>
+                <div className="relative group scale-105 transition-all duration-300">
+                  {/* Premium glow for footer */}
+                  <div className="absolute -inset-3 bg-gradient-to-r from-teal-500/30 to-orange-500/30 rounded-xl blur-xl opacity-90 transition-all duration-300 animate-pulse"></div>
 
-                  {/* Elegant rectangular container for footer */}
-                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg px-4 py-2 border border-teal-400/30 transition-all duration-300 shadow-xl group-hover:border-teal-400/50">
+                  {/* Rotating shimmer */}
+                  <div className="absolute -inset-4 bg-gradient-to-r from-teal-400/20 via-orange-400/20 to-teal-400/20 rounded-xl blur-2xl opacity-60" style={{animation: 'spin 6s linear infinite'}}></div>
+
+                  {/* Premium rectangular container with perfect fit */}
+                  <div className="relative bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-xl px-6 py-3 border-2 border-teal-400/40 transition-all duration-300 shadow-2xl group-hover:border-teal-400/60 group-hover:shadow-teal-500/20 group-hover:scale-105">
                     <img
                       src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-26.png"
                       alt="WasabiTel Logo"
-                      className="h-16 w-auto object-contain transition-all duration-500 brightness-110 group-hover:scale-105"
+                      className="h-20 w-auto object-contain transition-all duration-500 brightness-110 contrast-110"
                     />
                   </div>
                 </div>

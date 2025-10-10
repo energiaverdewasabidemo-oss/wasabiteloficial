@@ -41,19 +41,19 @@ const Header: React.FC<HeaderProps> = ({ onContactClick }) => {
         <div className="flex justify-between items-center py-2 sm:py-4">
           {/* Logo Section - Exactly like WasabiEnergía */}
           <div className="flex items-center">
-            <div className="relative group cursor-pointer transition-all duration-300">
-              {/* Elegant glow effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 rounded-xl blur-lg opacity-100 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
+            <div className="relative group cursor-pointer scale-105 transition-all duration-300">
+              {/* Premium glow effect */}
+              <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/30 to-orange-500/30 rounded-xl blur-xl opacity-100 transition-all duration-300 animate-pulse"></div>
 
-              {/* Subtle rotating glow */}
-              <div className="absolute -inset-3 bg-gradient-to-r from-teal-400/10 via-orange-400/10 to-teal-400/10 rounded-xl blur-xl opacity-60 animate-spin" style={{animationDuration: '8s'}}></div>
+              {/* Rotating shimmer */}
+              <div className="absolute -inset-3 bg-gradient-to-r from-teal-400/20 via-orange-400/20 to-teal-400/20 rounded-xl blur-2xl opacity-70 animate-spin" style={{animationDuration: '6s'}}></div>
 
-              {/* Elegant rectangular container */}
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 border border-teal-400/30 transition-all duration-300 shadow-xl group-hover:border-teal-400/50 group-hover:shadow-2xl">
+              {/* Premium rectangular container with perfect fit */}
+              <div className="relative bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-xl px-5 py-2.5 sm:px-8 sm:py-3.5 border-2 border-teal-400/40 transition-all duration-300 shadow-2xl group-hover:border-teal-400/60 group-hover:shadow-teal-500/20 group-hover:scale-105">
                 <img
                   src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-26.png"
                   alt="WasabiTel Logo"
-                  className="h-8 sm:h-12 w-auto object-contain transition-all duration-300 brightness-110 relative z-10"
+                  className="h-10 sm:h-16 w-auto object-contain transition-all duration-300 brightness-110 contrast-110 relative z-10"
                 />
               </div>
             </div>
