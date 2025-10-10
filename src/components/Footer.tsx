@@ -91,11 +91,19 @@ const Footer: React.FC<FooterProps> = ({ onCallRequestClick }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 slide-up">
             <div className="bounce-in">
               <div className="flex items-center space-x-3 mb-6">
-                <img
-                  src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-22.png"
-                  alt="WasabiTel Logo"
-                  className="h-24 w-auto object-contain float-animation hover:scale-110 transition-transform duration-500"
-                />
+                <div className="relative group">
+                  {/* Elegant glow for footer */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 rounded-xl blur-lg opacity-80 transition-all duration-300"></div>
+
+                  {/* Elegant rectangular container for footer */}
+                  <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl px-6 py-4 border border-teal-400/30 transition-all duration-300 shadow-xl group-hover:border-teal-400/50">
+                    <img
+                      src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/10/Diseno-sin-titulo-26.png"
+                      alt="WasabiTel Logo"
+                      className="h-20 w-auto object-contain transition-all duration-500 brightness-110 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
               </div>
               <p className="text-gray-300 text-xl leading-relaxed mb-8 hover:text-gray-200 transition-colors duration-300">
                 Más de 15 años conectando España con la mejor tecnología en telecomunicaciones. 
