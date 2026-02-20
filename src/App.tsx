@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -10,13 +10,14 @@ import PremiumServices from './components/PremiumServices';
 import SecurityServices from './components/SecurityServices';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsConditions from './components/TermsConditions';
 import AlarmForm from './components/AlarmForm';
 import CallRequestForm from './components/CallRequestForm';
-import LegalNotice from './components/LegalNotice';
-import CookiePolicy from './components/CookiePolicy';
 import CookiePopup from './components/CookiePopup';
+
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
+const TermsConditions = lazy(() => import('./components/TermsConditions'));
+const LegalNotice = lazy(() => import('./components/LegalNotice'));
+const CookiePolicy = lazy(() => import('./components/CookiePolicy'));
 
 function App() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -60,12 +61,16 @@ function App() {
       const path = window.location.pathname;
       if (path === '/politica-privacidad') {
         setShowPrivacyPolicy(true);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else if (path === '/terminos-condiciones') {
         setShowTermsConditions(true);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else if (path === '/aviso-legal') {
         setShowLegalNotice(true);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else if (path === '/cookies') {
         setShowCookiePolicy(true);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else {
         setShowPrivacyPolicy(false);
         setShowTermsConditions(false);
@@ -80,32 +85,59 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  // Scroll to top whenever any policy page opens or closes
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [showPrivacyPolicy, showTermsConditions, showLegalNotice, showCookiePolicy]);
+
+  const LoadingSpinner = () => (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="w-16 h-16 border-4 border-teal-200 border-t-teal-600 rounded-full animate-spin"></div>
+    </div>
+  );
+
   if (showPrivacyPolicy) {
-    return <PrivacyPolicy onBack={() => {
-      setShowPrivacyPolicy(false);
-      window.history.pushState({}, '', '/');
-    }} />;
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <PrivacyPolicy onBack={() => {
+          setShowPrivacyPolicy(false);
+          window.history.pushState({}, '', '/');
+        }} />
+      </Suspense>
+    );
   }
 
   if (showTermsConditions) {
-    return <TermsConditions onBack={() => {
-      setShowTermsConditions(false);
-      window.history.pushState({}, '', '/');
-    }} />;
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <TermsConditions onBack={() => {
+          setShowTermsConditions(false);
+          window.history.pushState({}, '', '/');
+        }} />
+      </Suspense>
+    );
   }
 
   if (showLegalNotice) {
-    return <LegalNotice onBack={() => {
-      setShowLegalNotice(false);
-      window.history.pushState({}, '', '/');
-    }} />;
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <LegalNotice onBack={() => {
+          setShowLegalNotice(false);
+          window.history.pushState({}, '', '/');
+        }} />
+      </Suspense>
+    );
   }
 
   if (showCookiePolicy) {
-    return <CookiePolicy onBack={() => {
-      setShowCookiePolicy(false);
-      window.history.pushState({}, '', '/');
-    }} />;
+    return (
+      <Suspense fallback={<LoadingSpinner />}>
+        <CookiePolicy onBack={() => {
+          setShowCookiePolicy(false);
+          window.history.pushState({}, '', '/');
+        }} />
+      </Suspense>
+    );
   }
 
   return (
