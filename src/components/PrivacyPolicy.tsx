@@ -25,7 +25,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             </div>
             <div>
               <h1 className="text-4xl font-bold text-gray-900">Política de Privacidad</h1>
-              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Enero 2024</p>
+              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Febrero 2026</p>
             </div>
           </div>
         </div>
@@ -40,11 +40,11 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
             </div>
             <div className="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-r-xl">
               <div className="space-y-3 text-gray-700">
-                <p><strong>Denominación:</strong> WasabiTel Telecomunicaciones S.L.</p>
-                <p><strong>CIF:</strong> B-12345678</p>
-                <p><strong>Domicilio:</strong> Calle Ejemplo, 123, 28001 Madrid, España</p>
-                <p><strong>Teléfono:</strong> 621 50 83 00</p>
-                <p><strong>Email:</strong> privacidad@wasabitel.com</p>
+                <p><strong>Denominación:</strong> WasabiTel SL</p>
+                <p><strong>CIF:</strong> B23933989</p>
+                <p><strong>Domicilio:</strong> Calle Andarella, Num 2, Bloque 3, Planta 9, Puerta 6, 46950 Xirivella (Valencia)</p>
+                <p><strong>Teléfono:</strong> 634 09 31 97</p>
+                <p><strong>Email:</strong> originbycarlos@gmail.com</p>
               </div>
             </div>
           </section>
@@ -321,8 +321,8 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                     <Phone className="w-5 h-5 text-teal-600" />
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">WhatsApp</div>
-                    <div className="text-gray-600">621 50 83 00</div>
+                    <div className="font-bold text-gray-900">Teléfono</div>
+                    <div className="text-gray-600">634 09 31 97</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -331,7 +331,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">Email</div>
-                    <div className="text-gray-600">privacidad@wasabitel.com</div>
+                    <div className="text-gray-600">originbycarlos@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -340,7 +340,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">Dirección</div>
-                    <div className="text-gray-600 text-sm">Calle Ejemplo, 123<br />28001 Madrid</div>
+                    <div className="text-gray-600 text-sm">Calle Andarella, Num 2<br />46950 Xirivella (Valencia)</div>
                   </div>
                 </div>
               </div>

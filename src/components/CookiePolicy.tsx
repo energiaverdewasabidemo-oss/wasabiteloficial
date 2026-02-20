@@ -25,7 +25,7 @@ const CookiePolicy: React.FC<CookiePolicyProps> = ({ onBack }) => {
             </div>
             <div>
               <h1 className="text-4xl font-bold text-gray-900">Política de Cookies</h1>
-              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Enero 2024</p>
+              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Febrero 2026</p>
             </div>
           </div>
         </div>
@@ -347,7 +347,7 @@ const CookiePolicy: React.FC<CookiePolicyProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">Email</div>
-                    <div className="text-gray-600">cookies@wasabitel.com</div>
+                    <div className="text-gray-600">originbycarlos@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -355,8 +355,8 @@ const CookiePolicy: React.FC<CookiePolicyProps> = ({ onBack }) => {
                     <Settings className="w-5 h-5 text-orange-600" />
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">WhatsApp</div>
-                    <div className="text-gray-600">621 50 83 00</div>
+                    <div className="font-bold text-gray-900">Teléfono</div>
+                    <div className="text-gray-600">634 09 31 97</div>
                   </div>
                 </div>
               </div>

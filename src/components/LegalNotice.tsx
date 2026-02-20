@@ -25,7 +25,7 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
             </div>
             <div>
               <h1 className="text-4xl font-bold text-gray-900">Aviso Legal</h1>
-              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Enero 2024</p>
+              <p className="text-gray-600 mt-2">WasabiTel - Última actualización: Febrero 2026</p>
             </div>
           </div>
         </div>
@@ -45,21 +45,21 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
                     <Building className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>Denominación social:</strong></p>
-                      <p className="text-gray-600">WasabiTel Telecomunicaciones S.L.</p>
+                      <p className="text-gray-600">WasabiTel SL</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <FileText className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>CIF:</strong></p>
-                      <p className="text-gray-600">B-12345678</p>
+                      <p className="text-gray-600">B23933989</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>Domicilio social:</strong></p>
-                      <p className="text-gray-600">Calle Ejemplo, 123<br/>28001 Madrid, España</p>
+                      <p className="text-gray-600">Calle Andarella, Num 2<br/>Bloque 3, Planta 9, Puerta 6<br/>46950 Xirivella (Valencia)</p>
                     </div>
                   </div>
                 </div>
@@ -68,29 +68,24 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
                     <Phone className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>Teléfono:</strong></p>
-                      <p className="text-gray-600">621 50 83 00</p>
+                      <p className="text-gray-600">634 09 31 97</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Mail className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>Email:</strong></p>
-                      <p className="text-gray-600">info@wasabitel.com</p>
+                      <p className="text-gray-600">originbycarlos@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Globe className="w-5 h-5 text-gray-600 mt-1" />
                     <div>
                       <p className="text-gray-700"><strong>Sitio web:</strong></p>
-                      <p className="text-gray-600">www.wasabitel.com</p>
+                      <p className="text-gray-600">wasabitel.com</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="mt-6 pt-4 border-t border-gray-200">
-                <p className="text-gray-700 text-sm">
-                  <strong>Registro Mercantil:</strong> Madrid, Tomo 1234, Folio 56, Sección 8, Hoja M-123456, Inscripción 1ª
-                </p>
               </div>
             </div>
           </section>
@@ -103,46 +98,45 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
             </div>
             <div className="bg-teal-50 p-6 rounded-xl">
               <p className="text-teal-800 leading-relaxed mb-4">
-                WasabiTel es una empresa especializada en servicios de telecomunicaciones que desarrolla 
-                su actividad en el territorio nacional español, ofreciendo soluciones integrales de conectividad 
-                y seguridad para particulares y empresas.
+                WasabiTel ofrece servicios de asesoría integral en telefonía, energía y seguros,
+                operando con marcas propias en el territorio nacional español.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-bold text-teal-900 mb-3">🌐 Servicios Principales</h4>
+                  <h4 className="font-bold text-teal-900 mb-3">Servicios Principales</h4>
                   <ul className="space-y-2 text-teal-800">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Servicios de fibra óptica y conexión a internet
+                      Asesoría en telefonía móvil y fija
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Planes de telefonía móvil y datos
+                      Consultoría en servicios de energía
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Sistemas de seguridad y videovigilancia
+                      Asesoría en seguros
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Servicios de telecomunicaciones para empresas
+                      Servicios de fibra óptica
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold text-teal-900 mb-3">🛠️ Servicios Adicionales</h4>
+                  <h4 className="font-bold text-teal-900 mb-3">Servicios Adicionales</h4>
                   <ul className="space-y-2 text-teal-800">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Instalación y mantenimiento técnico
+                      Sistemas de alarma y seguridad
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Soporte técnico especializado 24/7
+                      Atención al cliente personalizada
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Consultoría en telecomunicaciones
+                      Comparativas de servicios
                     </li>
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-teal-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -361,8 +355,8 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
                     <Mail className="w-5 h-5 text-teal-600" />
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">Email Legal</div>
-                    <div className="text-gray-600 text-sm">legal@wasabitel.com</div>
+                    <div className="font-bold text-gray-900">Email</div>
+                    <div className="text-gray-600 text-sm">originbycarlos@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -371,7 +365,7 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">Teléfono</div>
-                    <div className="text-gray-600 text-sm">621 50 83 00</div>
+                    <div className="text-gray-600 text-sm">634 09 31 97</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -380,7 +374,7 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <div className="font-bold text-gray-900">Dirección</div>
-                    <div className="text-gray-600 text-sm">Calle Ejemplo, 123<br/>28001 Madrid</div>
+                    <div className="text-gray-600 text-sm">Calle Andarella, Num 2<br/>46950 Xirivella (Valencia)</div>
                   </div>
                 </div>
               </div>
@@ -390,7 +384,7 @@ const LegalNotice: React.FC<LegalNoticeProps> = ({ onBack }) => {
           {/* Footer */}
           <div className="border-t border-gray-200 pt-6">
             <p className="text-sm text-gray-500 text-center">
-              Última actualización: Enero 2024. WasabiTel se reserva el derecho de modificar 
+              Última actualización: Febrero 2026. WasabiTel se reserva el derecho de modificar
               este aviso legal en cualquier momento, publicando las modificaciones en este mismo sitio web.
             </p>
           </div>
