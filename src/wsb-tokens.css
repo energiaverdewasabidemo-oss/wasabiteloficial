@@ -1,0 +1,326 @@
+/**
+ * ============================================================================
+ * WASABI · BRAND TOKENS v3
+ * Sistema visual derivado del logo familia Wasabi
+ *
+ * Uso: importar al inicio del proyecto antes de cualquier otro CSS.
+ *      Todas las variables vienen prefijadas con --wsb-* para no chocar.
+ * ============================================================================
+ */
+
+:root {
+
+  /* ─── COLOR · VERDES (el ADN) ─────────────────────────────── */
+  --wsb-green:           #96D700;  /* signature — el verde de la marca */
+  --wsb-green-bright:    #A8E810;  /* CTAs, highlights, momentos punch */
+  --wsb-green-deep:      #7AB500;  /* hover y pressed sobre verdes */
+  --wsb-green-shadow:    #5C8600;  /* chevron offset · stamp shadows */
+  --wsb-green-data:      #3D6B00;  /* cifras y datos sobre fondo claro */
+  --wsb-green-soft:      rgba(150, 215, 0, 0.12);  /* fondos sutiles */
+
+  /* ─── COLOR · NEUTROS ─────────────────────────────────────── */
+  --wsb-cream:           #FAFAF7;  /* fondo principal — 50% del sistema */
+  --wsb-cream-2:         #F2EFE6;  /* paneles tonales, secciones */
+  --wsb-paper:           #FFFFFF;  /* facturas, documentos, mockups */
+  --wsb-ink:             #0A0A0A;  /* texto principal, accent primario */
+  --wsb-ink-2:           #1F1F1F;  /* texto secundario sobre cream */
+  --wsb-mute:            rgba(10, 10, 10, 0.55);   /* texto muted, captions */
+  --wsb-mute-2:          rgba(10, 10, 10, 0.35);   /* texto desactivado */
+  --wsb-line:            rgba(10, 10, 10, 0.14);   /* bordes default */
+  --wsb-line-soft:       rgba(10, 10, 10, 0.06);   /* bordes muy sutiles */
+
+  /* ─── COLOR · ACENTO + FAMILIA ────────────────────────────── */
+  --wsb-accent:          #D97757;  /* terracotta — sólo gracias/referidos */
+  --wsb-blue:            #2F5BFF;  /* Wasabi Trader */
+  --wsb-blue-deep:       #1E40C4;
+  --wsb-lime:            #A8E810;  /* Wasabi Ads */
+  --wsb-teal:            #5AC8B8;  /* Wasabi Tel primario */
+  --wsb-orange:          #FF7847;  /* Wasabi Tel secundario */
+
+  /* ─── COLOR · SEMÁNTICOS ──────────────────────────────────── */
+  --wsb-success:         var(--wsb-green-data);
+  --wsb-warning:         #B45309;
+  --wsb-danger:          #B91C1C;
+  --wsb-info:            #1D4ED8;
+
+  /* ─── TIPOGRAFÍA ──────────────────────────────────────────── */
+  --wsb-font-display:    'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --wsb-font-body:       'Inter', system-ui, -apple-system, sans-serif;
+  --wsb-font-mono:       'JetBrains Mono', ui-monospace, monospace;
+  --wsb-font-script:     'Caveat', cursive;  /* sólo gestos puntuales */
+
+  /* ─── ESCALA TIPOGRÁFICA ──────────────────────────────────── */
+  --wsb-text-xs:         12px;
+  --wsb-text-sm:         14px;
+  --wsb-text-base:       16px;
+  --wsb-text-lg:         18px;
+  --wsb-text-xl:         20px;
+  --wsb-text-2xl:        24px;
+  --wsb-text-3xl:        32px;
+  --wsb-text-4xl:        44px;
+  --wsb-text-5xl:        64px;
+  --wsb-text-6xl:        96px;
+  --wsb-text-7xl:        128px;
+
+  /* ─── LETTER-SPACING ──────────────────────────────────────── */
+  --wsb-tracking-tightest: -0.04em;   /* display XL */
+  --wsb-tracking-tighter:  -0.035em;  /* display L */
+  --wsb-tracking-tight:    -0.025em;  /* display M */
+  --wsb-tracking-normal:    0;
+  --wsb-tracking-wide:      0.01em;
+  --wsb-tracking-eyebrow:   0.16em;   /* UPPERCASE labels */
+
+  /* ─── LINE-HEIGHT ─────────────────────────────────────────── */
+  --wsb-leading-tight:   0.92;
+  --wsb-leading-snug:    1.0;
+  --wsb-leading-normal:  1.5;
+  --wsb-leading-relaxed: 1.55;
+  --wsb-leading-loose:   1.7;
+
+  /* ─── PESOS ───────────────────────────────────────────────── */
+  --wsb-weight-regular:    400;
+  --wsb-weight-medium:     500;
+  --wsb-weight-semibold:   600;
+  --wsb-weight-bold:       700;
+
+  /* ─── ESPACIADO (base 8) ──────────────────────────────────── */
+  --wsb-space-1:         4px;
+  --wsb-space-2:         8px;
+  --wsb-space-3:         12px;
+  --wsb-space-4:         16px;
+  --wsb-space-5:         20px;
+  --wsb-space-6:         24px;
+  --wsb-space-8:         32px;
+  --wsb-space-10:        40px;
+  --wsb-space-12:        48px;
+  --wsb-space-16:        64px;
+  --wsb-space-20:        80px;
+  --wsb-space-24:        96px;
+  --wsb-space-32:        128px;
+
+  /* ─── RADIUS ──────────────────────────────────────────────── */
+  --wsb-radius-none:     0;
+  --wsb-radius-sm:       4px;     /* botones, inputs default */
+  --wsb-radius-md:       6px;     /* botones primary */
+  --wsb-radius-lg:       8px;     /* inputs grandes, paneles */
+  --wsb-radius-xl:       12px;    /* cards */
+  --wsb-radius-pill:     999px;   /* chips · única excepción */
+
+  /* ─── SOMBRAS — STAMP STYLE ───────────────────────────────── */
+  /* Sin sombras blandas. Todas son offsets duros tipo doble chevron. */
+  --wsb-shadow-stamp-sm: 3px 3px 0 var(--wsb-green-shadow);
+  --wsb-shadow-stamp:    6px 6px 0 var(--wsb-green-shadow);
+  --wsb-shadow-stamp-lg: 9px 9px 0 var(--wsb-green-shadow);
+  --wsb-shadow-stamp-ink: 6px 6px 0 var(--wsb-ink);
+  --wsb-shadow-focus:    0 0 0 3px rgba(10, 10, 10, 0.08);
+  --wsb-shadow-focus-green: 0 0 0 3px rgba(150, 215, 0, 0.4);
+
+  /* ─── CONTENEDOR ──────────────────────────────────────────── */
+  --wsb-container:       1320px;
+  --wsb-container-narrow: 920px;
+  --wsb-shell-x:         56px;
+  --wsb-shell-x-mobile:  24px;
+
+  /* ─── TRANSICIONES ────────────────────────────────────────── */
+  --wsb-ease:            cubic-bezier(0.2, 0.8, 0.2, 1);
+  --wsb-duration-fast:   120ms;
+  --wsb-duration-base:   200ms;
+  --wsb-duration-slow:   320ms;
+
+  /* ─── Z-INDEX ─────────────────────────────────────────────── */
+  --wsb-z-base:          1;
+  --wsb-z-dropdown:      10;
+  --wsb-z-sticky:        100;
+  --wsb-z-fixed:         200;
+  --wsb-z-modal-bg:      900;
+  --wsb-z-modal:         1000;
+  --wsb-z-toast:         1100;
+}
+
+/* ─── DARK MODE — opcional, mantener verde signature ────────── */
+@media (prefers-color-scheme: dark) {
+  :root.wsb-dark-auto {
+    --wsb-cream:         #0A0A0A;
+    --wsb-cream-2:       #1F1F1F;
+    --wsb-paper:         #1F1F1F;
+    --wsb-ink:           #FAFAF7;
+    --wsb-ink-2:         #F2EFE6;
+    --wsb-mute:          rgba(250, 250, 247, 0.55);
+    --wsb-line:          rgba(250, 250, 247, 0.14);
+    --wsb-line-soft:     rgba(250, 250, 247, 0.06);
+  }
+}
+
+/* ─── RESET MÍNIMO ────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-family: var(--wsb-font-body);
+  font-size: var(--wsb-text-base);
+  line-height: var(--wsb-leading-relaxed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--wsb-cream);
+  color: var(--wsb-ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--wsb-font-display);
+  font-weight: var(--wsb-weight-bold);
+  letter-spacing: var(--wsb-tracking-tight);
+  margin: 0;
+  color: var(--wsb-ink);
+}
+
+p, ul, ol { margin: 0; }
+
+a {
+  color: var(--wsb-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--wsb-green);
+  text-decoration-thickness: 2px;
+}
+a:hover { color: var(--wsb-green-deep); }
+
+/* ─── COMPONENTES BASE ────────────────────────────────────── */
+
+.wsb-shell {
+  max-width: var(--wsb-container);
+  margin: 0 auto;
+  padding: 0 var(--wsb-shell-x);
+}
+@media (max-width: 768px) {
+  .wsb-shell { padding: 0 var(--wsb-shell-x-mobile); }
+}
+
+.wsb-eyebrow {
+  font-family: var(--wsb-font-display);
+  font-weight: var(--wsb-weight-bold);
+  font-size: var(--wsb-text-xs);
+  letter-spacing: var(--wsb-tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--wsb-mute);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.wsb-eyebrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--wsb-green);
+}
+
+.wsb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--wsb-font-display);
+  font-weight: var(--wsb-weight-medium);
+  font-size: var(--wsb-text-base);
+  padding: 14px 22px;
+  border-radius: var(--wsb-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--wsb-duration-fast) var(--wsb-ease);
+  text-decoration: none;
+  letter-spacing: -0.005em;
+}
+
+.wsb-btn-primary {
+  background: var(--wsb-green);
+  color: var(--wsb-ink);
+  border: 1px solid var(--wsb-ink);
+  box-shadow: var(--wsb-shadow-stamp);
+}
+.wsb-btn-primary:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 7px 7px 0 var(--wsb-green-shadow);
+}
+.wsb-btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--wsb-green-shadow);
+}
+
+.wsb-btn-secondary {
+  background: transparent;
+  color: var(--wsb-ink);
+  border-color: var(--wsb-ink);
+}
+.wsb-btn-secondary:hover {
+  background: var(--wsb-ink);
+  color: var(--wsb-cream);
+}
+
+.wsb-btn-ghost {
+  background: transparent;
+  color: var(--wsb-ink);
+}
+.wsb-btn-ghost:hover {
+  background: var(--wsb-cream-2);
+}
+
+.wsb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--wsb-radius-pill);
+  font-size: var(--wsb-text-xs);
+  font-weight: var(--wsb-weight-medium);
+  border: 1px solid var(--wsb-line);
+  background: var(--wsb-paper);
+}
+
+.wsb-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--wsb-line);
+  border-radius: var(--wsb-radius-md);
+  background: var(--wsb-paper);
+  color: var(--wsb-ink);
+  font: inherit;
+  transition: border-color var(--wsb-duration-fast) var(--wsb-ease);
+}
+.wsb-input:focus {
+  outline: none;
+  box-shadow: var(--wsb-shadow-focus);
+  border-color: var(--wsb-ink);
+}
+
+.wsb-card {
+  background: var(--wsb-paper);
+  border: 1px solid var(--wsb-line);
+  border-radius: var(--wsb-radius-xl);
+  padding: 32px;
+}
+
+/* Mono tabular para números */
+.wsb-mono {
+  font-family: var(--wsb-font-mono);
+  font-feature-settings: 'tnum';
+}
+
+/* Doble chevron text effect — solo H1 hero */
+.wsb-double-chevron {
+  text-shadow: 5px 5px 0 var(--wsb-green-shadow);
+  color: var(--wsb-ink);
+}
+
+/* Marker highlight (verde subrayado bajo el texto) */
+.wsb-marker {
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    rgba(126, 211, 33, 0.5) 60%,
+    rgba(126, 211, 33, 0.5) 92%,
+    transparent 92%
+  );
+  padding: 0 4px;
+}

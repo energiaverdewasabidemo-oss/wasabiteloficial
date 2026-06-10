@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Phone, User, Clock, MessageCircle } from 'lucide-react';
+import { submitLead } from '../lib/lead';
 
 interface CallRequestFormProps {
   isOpen: boolean;
@@ -89,7 +90,14 @@ const CallRequestForm: React.FC<CallRequestFormProps> = ({ isOpen, onClose }) =>
     }
 
     setIsSubmitting(true);
-    
+
+    await submitLead({
+      nombre: formData.name,
+      telefono: formData.phone,
+      source: 'wasabitel',
+      extra: { tipo: 'llamada', preferredTime: formData.preferredTime, reason: formData.reason },
+    });
+
     try {
       const userIP = await getUserIP();
       const whatsappMessage = formatWhatsAppMessage(userIP);

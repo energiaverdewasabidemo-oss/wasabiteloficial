@@ -1,0 +1,42 @@
+/* ============================================================================
+ * WASABI TEL — override de marca (teal + naranja) sobre el sistema Wasabi.
+ * Color de marca via la familia --wsb-green*. Carga DESPUES de wsb-tokens.css.
+ * ========================================================================== */
+
+:root {
+  --wsb-green:        #14B8A6;  /* teal Tel = color de marca */
+  --wsb-green-bright: #2DD4BF;
+  --wsb-green-deep:   #0D9488;
+  --wsb-green-shadow: #0F766E;  /* offset de las sombras stamp */
+  --wsb-green-data:   #0F766E;  /* cifras sobre fondo claro */
+  --wsb-green-soft:   rgba(20, 184, 166, 0.10);
+
+  --wsb-orange:       #FF7847;  /* acento secundario Tel */
+
+  --wsb-shadow-stamp-sm: 3px 3px 0 var(--wsb-green-shadow);
+  --wsb-shadow-stamp:    6px 6px 0 var(--wsb-green-shadow);
+  --wsb-shadow-stamp-lg: 9px 9px 0 var(--wsb-green-shadow);
+  --wsb-shadow-focus-green: 0 0 0 3px rgba(20, 184, 166, 0.4);
+}
+
+.wsb-eyebrow::before { background: var(--wsb-green); }
+.wsb-double-chevron { text-shadow: 5px 5px 0 var(--wsb-green-shadow); }
+.wsb-marker {
+  background: linear-gradient(
+    180deg, transparent 60%,
+    rgba(20, 184, 166, 0.45) 60%, rgba(20, 184, 166, 0.45) 92%, transparent 92%);
+  padding: 0 4px;
+}
+
+/* Suaviza los efectos neon de Bolt para encajar con el estilo flat Wasabi */
+.neon-teal { box-shadow: var(--wsb-shadow-stamp-sm); }
+.neon-orange { box-shadow: 3px 3px 0 var(--wsb-orange); }
+
+/* La firma teal→naranja se mantiene (identidad Wasabi Tel) */
+.text-gradient-teal-orange,
+.text-gradient-blue-purple {
+  background: linear-gradient(135deg, var(--wsb-green), var(--wsb-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

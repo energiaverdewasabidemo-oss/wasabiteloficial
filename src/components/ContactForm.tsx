@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Phone, Mail, User, MapPin, Wifi, Smartphone, Shield, Check } from 'lucide-react';
+import { submitLead } from '../lib/lead';
 
 interface ContactFormProps {
   isOpen: boolean;
@@ -101,7 +102,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose, selectedServ
     }
 
     setIsSubmitting(true);
-    
+
+    // Persistir el lead (Supabase + email + Meta CAPI). No bloquea el flujo.
+    await submitLead({
+      nombre: formData.name,
+      email: formData.email,
+      telefono: formData.phone,
+      mensaje: formData.message,
+      source: 'wasabitel',
+      extra: { service: formData.service, address: formData.address, marketing: formData.acceptMarketing },
+    });
+
     try {
       // Obtener IP del usuario
       const userIP = await getUserIP();

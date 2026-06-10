@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Shield, Phone, Mail, User, MapPin, Clock, AlertCircle } from 'lucide-react';
+import { submitLead } from '../lib/lead';
 
 interface AlarmFormProps {
   isOpen: boolean;
@@ -108,7 +109,16 @@ const AlarmForm: React.FC<AlarmFormProps> = ({ isOpen, onClose }) => {
     }
 
     setIsSubmitting(true);
-    
+
+    await submitLead({
+      nombre: formData.name,
+      email: formData.email,
+      telefono: formData.phone,
+      mensaje: formData.message,
+      source: 'wasabitel',
+      extra: { tipo: 'alarma', propertyType: formData.propertyType, alarmType: formData.alarmType, address: formData.address },
+    });
+
     try {
       const userIP = await getUserIP();
       const whatsappMessage = formatWhatsAppMessage(userIP);
